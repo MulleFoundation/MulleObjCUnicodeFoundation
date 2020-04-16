@@ -10,24 +10,24 @@
  *
  *  version:  major, minor, patch
  */
-#define mulle_objc_unicode_foundation_VERSION  ((0 << 20) | (7 << 8) | 56)
+#define MULLE_OBJC_UNICODE_FOUNDATION_VERSION  ((0 << 20) | (17 << 8) | 1)
 
 
 static inline unsigned int   MulleObjCUnicodeFoundation_get_version_major( void)
 {
-   return( mulle_objc_unicode_foundation_VERSION >> 20);
+   return( MULLE_OBJC_UNICODE_FOUNDATION_VERSION >> 20);
 }
 
 
 static inline unsigned int   MulleObjCUnicodeFoundation_get_version_minor( void)
 {
-   return( (mulle_objc_unicode_foundation_VERSION >> 8) & 0xFFF);
+   return( (MULLE_OBJC_UNICODE_FOUNDATION_VERSION >> 8) & 0xFFF);
 }
 
 
 static inline unsigned int   MulleObjCUnicodeFoundation_get_version_patch( void)
 {
-   return( mulle_objc_unicode_foundation_VERSION & 0xFF);
+   return( MULLE_OBJC_UNICODE_FOUNDATION_VERSION & 0xFF);
 }
 
 
