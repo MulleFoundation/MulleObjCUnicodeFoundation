@@ -45,12 +45,7 @@
 + (instancetype) illegalCharacterSet;
 
 + (instancetype) mulleNonPercentEscapeCharacterSet;
-+ (instancetype) URLFragmentAllowedCharacterSet;
-+ (instancetype) URLHostAllowedCharacterSet;
-+ (instancetype) URLPasswordAllowedCharacterSet;
-+ (instancetype) URLPathAllowedCharacterSet;
-+ (instancetype) URLQueryAllowedCharacterSet;
-+ (instancetype) URLUserAllowedCharacterSet;
+
 
 // mulle addition
 + (instancetype) mulleURLSchemeAllowedCharacterSet;

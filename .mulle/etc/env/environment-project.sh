@@ -20,7 +20,7 @@ export PROJECT_DOWNCASE_IDENTIFIER="mulle_objc_unicode_foundation"
 #
 #
 #
-export PROJECT_UPCASE_IDENTIFIER="mulle_objc_unicode_foundation"
+export PROJECT_UPCASE_IDENTIFIER="MULLE_OBJC_UNICODE_FOUNDATION"
 
 
 #
