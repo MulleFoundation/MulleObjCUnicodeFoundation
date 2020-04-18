@@ -77,8 +77,6 @@ static id   construct( SEL _cmd)
    return( construct( _cmd));
 }
 
-
-
 @end
 
 
