@@ -1,25 +1,25 @@
 #
 #
 #
-export PROJECT_NAME="MulleObjCStandardFoundation"
+export PROJECT_NAME="MulleObjCUnicodeFoundation"
 
 
 #
 #
 #
-export PROJECT_IDENTIFIER="MulleObjCStandardFoundation"
+export PROJECT_IDENTIFIER="MulleObjCUnicodeFoundation"
 
 
 #
 #
 #
-export PROJECT_DOWNCASE_IDENTIFIER="mulle_objc_standard_foundation"
+export PROJECT_DOWNCASE_IDENTIFIER="mulle_objc_unicode_foundation"
 
 
 #
 #
 #
-export PROJECT_UPCASE_IDENTIFIER="MULLE_OBJC_STANDARD_FOUNDATION"
+export PROJECT_UPCASE_IDENTIFIER="MULLE_OBJC_UNICODE_FOUNDATION"
 
 
 #
