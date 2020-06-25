@@ -43,9 +43,6 @@
 // - (NSString *) capitalizedString;
 // - (NSString *) mulleDecapitalizedString
 
-- (NSString *) stringByAddingPercentEscapesUsingEncoding:(NSStringEncoding) encoding;
-- (NSString *) stringByReplacingPercentEscapesUsingEncoding:(NSStringEncoding) encoding;
-
 @end
 
 

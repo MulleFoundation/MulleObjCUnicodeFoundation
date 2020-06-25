@@ -44,12 +44,5 @@
 + (instancetype) decomposableCharacterSet;
 + (instancetype) illegalCharacterSet;
 
-+ (instancetype) mulleNonPercentEscapeCharacterSet;
-
-
-// mulle addition
-+ (instancetype) mulleURLSchemeAllowedCharacterSet;
-+ (instancetype) mulleNonPercentEscapeCharacterSet;
-
 @end
 
