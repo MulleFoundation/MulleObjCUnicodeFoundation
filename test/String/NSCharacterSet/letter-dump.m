@@ -1,6 +1,5 @@
-#import <MulleObjCStandardFoundation/MulleObjCStandardFoundation.h>
+#import <MulleObjCUnicodeFoundation/MulleObjCUnicodeFoundation.h>
 //#import "MulleStandaloneObjCFoundation.h"
-
 
 
 //
@@ -9,7 +8,8 @@
 //
 int main( int argc, const char * argv[])
 {
-   [[NSCharacterSet letterCharacterSet] mullePrintBitmapData:stdout];
+//   [[NSCharacterSet letterCharacterSet] mullePrintBitmapData:stdout];
+   printf( "%s", [[[NSCharacterSet letterCharacterSet] mulleTestDescription] UTF8String]);
 
    return( 0);
 }
