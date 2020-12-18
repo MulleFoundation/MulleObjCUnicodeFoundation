@@ -13,12 +13,17 @@
 #define _MulleObjCUnicodeFoundation_include_h__
 
 // How to tweak the following mulle-unicode #include
-//    remove:          `mulle-sourcetree mark mulle-unicode no-header`
-//    rename:          `mulle-sourcetree mark mulle-unicode set include whatever.h`
-//    toggle #import:  `mulle-sourcetree mark mulle-unicode [no-]import`
-//    toggle public:   `mulle-sourcetree mark mulle-unicode [no-]public`
-//    toggle optional: `mulle-sourcetree mark mulle-unicode [no-]require`
-//    remove for os:   `mulle-sourcetree mark mulle-unicode no-os-<osname>`
-# include <mulle-unicode/mulle-unicode.h>   // mulle-unicode
+//    remove:             `mulle-sourcetree mark mulle-unicode no-header`
+//    rename:             `mulle-sde dependency|library set mulle-unicode include whatever.h`
+//    toggle #import:     `mulle-sourcetree mark mulle-unicode [no-]import`
+//    toggle localheader: `mulle-sourcetree mark mulle-unicode [no-]localheader`
+//    toggle public:      `mulle-sourcetree mark mulle-unicode [no-]public`
+//    toggle optional:    `mulle-sourcetree mark mulle-unicode [no-]require`
+//    remove for os:      `mulle-sourcetree mark mulle-unicode no-os-<osname>`
+# if defined( __has_include) && __has_include("mulle-unicode.h")
+#   include "mulle-unicode.h"   // mulle-unicode
+# else
+#   include <mulle-unicode/mulle-unicode.h>   // mulle-unicode
+# endif
 
 #endif
