@@ -1,0 +1,17 @@
+{
+   "name" : "MulleObjCUnicodeFoundation",
+   "version" : "0.18.0",
+   "description" : "🤓 Unicode 3.x.x support for mulle-objc",
+   "homepage" : "https://github.com/MulleFoundation/MulleObjCUnicodeFoundation",
+   "bugs" : "https://github.com/MulleFoundation/MulleObjCUnicodeFoundation/issues",
+   "keywords" : [],
+   "license" : "UNLICENSED",
+   "repository" : {
+      "type" : "git",
+      "url" : "MulleFoundation/MulleObjCUnicodeFoundation"
+   },
+   "dependencies" : {
+      "MulleObjCStandardFoundation" : "MulleFoundation/MulleObjCStandardFoundation",
+      "mulle-unicode" : "mulle-c/mulle-unicode"
+   }
+}
