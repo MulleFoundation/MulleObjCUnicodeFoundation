@@ -2,12 +2,35 @@
 
 #### 🤓 Unicode 3.x.x support for mulle-objc
 
-Case-conversion for NSString and lots of NSCharacterSet methods.
+This library does not add any classes, but provides a lot of categories
+on NSString and NSCharacterSet.
 
-Build Status | Release Version
--------------|-----------------------------------
-[![Build Status](https://travis-ci.org/MulleFoundation/MulleObjCUnicodeFoundation.svg?branch=release)](https://travis-ci.org/MulleFoundation/MulleObjCUnicodeFoundation) | ![Mulle kybernetiK tag](https://img.shields.io/github/tag/MulleFoundation/MulleObjCUnicodeFoundation.svg) [![Build Status](https://travis-ci.org/MulleFoundation/MulleObjCUnicodeFoundation.svg?branch=release)](https://travis-ci.org/MulleFoundation/MulleObjCUnicodeFoundation)
 
+### You are here
+
+```
+   .-------------------------------------------------------------------.
+   | MulleFoundation                                                   |
+   '-------------------------------------------------------------------'
+   .----------------------------.
+   | Calendar                   |
+   '----------------------------'
+   .----------------------------.
+   | OS                         |
+   '----------------------------'
+           .--------------------..----------..-----..=========.
+           | Plist              || Archiver || KVC || Unicode |
+           '--------------------''----------''-----''========='
+           .--------------------------------------------------..-------.
+           | Standard                                         || Math  |
+           '--------------------------------------------------''-------'
+   .------..-----------------------------..----------------------------.
+   | Lock || Container                   || Value                      |
+   '------''-----------------------------''----------------------------'
+   .-------------------------------------------------------------------.
+   | MulleObjC                                                         |
+   '-------------------------------------------------------------------'
+```
 
 ## Install
 
