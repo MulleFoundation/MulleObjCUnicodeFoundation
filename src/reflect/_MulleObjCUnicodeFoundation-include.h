@@ -16,14 +16,14 @@
 
 // You can tweak the following #include with these commands.
 // (Use 3F86148B-17E3-4BE4-B99C-4F013075A1E7 instead of mulle-unicode if there are duplicate entries)
-//    remove:             `mulle-sourcetree mark mulle-unicode no-header`
+//    remove:             `mulle-sde dependency mark mulle-unicode no-header`
 //    rename:             `mulle-sde dependency|library set mulle-unicode include whatever.h`
-//    reorder:            `mulle-sourcetree move mulle-unicode <up|down>`
-//    toggle #include:    `mulle-sourcetree mark mulle-unicode [no-]import`
-//    toggle public:      `mulle-sourcetree mark mulle-unicode [no-]public`
-//    toggle optional:    `mulle-sourcetree mark mulle-unicode [no-]require`
-//    remove for platform:`mulle-sourcetree mark mulle-unicode no-platform-<uname>`
-//        (use mulle-sourcetree-to-c --unames for known values)
+//    reorder:            `mulle-sde dependency move mulle-unicode <up|down>`
+//    toggle #include:    `mulle-sde dependency mark mulle-unicode [no-]import`
+//    toggle public:      `mulle-sde dependency mark mulle-unicode [no-]public`
+//    toggle optional:    `mulle-sde dependency mark mulle-unicode [no-]require`
+//    remove for platform:`mulle-sde dependency mark mulle-unicode no-platform-<uname>`
+//        (use `mulle-sourcetree-to-c --unames` to list known values)
 #include <mulle-unicode/mulle-unicode.h>   // mulle-unicode
 
 #endif
