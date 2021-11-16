@@ -14,7 +14,7 @@ endif()
 #
 # Generated from sourcetree: BE32B923-DD68-4DF6-97E5-902E3C7B3BF9;MulleObjCStandardFoundation;no-singlephase;
 # Disable with : `mulle-sourcetree mark MulleObjCStandardFoundation no-link`
-# Disable for this platform: `mulle-sourcetree mark MulleObjCStandardFoundation no-cmake-platform-linux`
+# Disable for this platform: `mulle-sourcetree mark MulleObjCStandardFoundation no-cmake-platform-${MULLE_UNAME}`
 #
 if( NOT MULLE_OBJC_STANDARD_FOUNDATION_LIBRARY)
    find_library( MULLE_OBJC_STANDARD_FOUNDATION_LIBRARY NAMES ${CMAKE_STATIC_LIBRARY_PREFIX}MulleObjCStandardFoundation${CMAKE_STATIC_LIBRARY_SUFFIX} MulleObjCStandardFoundation NO_CMAKE_SYSTEM_PATH NO_SYSTEM_ENVIRONMENT_PATH)
@@ -94,7 +94,7 @@ endif()
 #
 # Generated from sourcetree: 3F86148B-17E3-4BE4-B99C-4F013075A1E7;mulle-unicode;no-all-load,no-cmake-inherit,no-cmake-searchpath,no-import,no-singlephase;
 # Disable with : `mulle-sourcetree mark mulle-unicode no-link`
-# Disable for this platform: `mulle-sourcetree mark mulle-unicode no-cmake-platform-linux`
+# Disable for this platform: `mulle-sourcetree mark mulle-unicode no-cmake-platform-${MULLE_UNAME}`
 #
 if( NOT MULLE_UNICODE_LIBRARY)
    find_library( MULLE_UNICODE_LIBRARY NAMES ${CMAKE_STATIC_LIBRARY_PREFIX}mulle-unicode${CMAKE_STATIC_LIBRARY_SUFFIX} mulle-unicode NO_CMAKE_SYSTEM_PATH NO_SYSTEM_ENVIRONMENT_PATH)
