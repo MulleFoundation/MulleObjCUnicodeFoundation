@@ -31,7 +31,8 @@ static inline unsigned int   MulleObjCUnicodeFoundation_get_version_patch( void)
 }
 
 
-extern uint32_t   MulleObjCUnicodeFoundation_get_version( void);
+MULLE_OBJC_UNICODE_FOUNDATION_EXTERN_GLOBAL
+uint32_t   MulleObjCUnicodeFoundation_get_version( void);
 
 
 #import "_MulleObjCUnicodeFoundation-export.h"
