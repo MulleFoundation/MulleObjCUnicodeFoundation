@@ -10,7 +10,7 @@
  *
  *  version:  major, minor, patch
  */
-#define MULLE_OBJC_UNICODE_FOUNDATION_VERSION  ((0 << 20) | (19 << 8) | 0)
+#define MULLE_OBJC_UNICODE_FOUNDATION_VERSION  ((0 << 20) | (20 << 8) | 0)
 
 
 static inline unsigned int   MulleObjCUnicodeFoundation_get_version_major( void)
@@ -36,5 +36,12 @@ uint32_t   MulleObjCUnicodeFoundation_get_version( void);
 
 
 #import "_MulleObjCUnicodeFoundation-export.h"
+
+
+#ifdef __has_include
+# if __has_include( "_MulleObjCUnicodeFoundation-versioncheck.h")
+#  include "_MulleObjCUnicodeFoundation-versioncheck.h"
+# endif
+#endif
 
 #endif
