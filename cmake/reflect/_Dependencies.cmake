@@ -92,7 +92,7 @@ endif()
 
 
 #
-# Generated from sourcetree: 3F86148B-17E3-4BE4-B99C-4F013075A1E7;mulle-unicode;no-all-load,no-cmake-inherit,no-cmake-searchpath,no-import,no-singlephase;
+# Generated from sourcetree: 3F86148B-17E3-4BE4-B99C-4F013075A1E7;mulle-unicode;no-all-load,no-cmake-loader,no-cmake-searchpath,no-import,no-singlephase;
 # Disable with : `mulle-sourcetree mark mulle-unicode no-link`
 # Disable for this platform: `mulle-sourcetree mark mulle-unicode no-cmake-platform-${MULLE_UNAME}`
 #
@@ -113,7 +113,48 @@ if( NOT MULLE_UNICODE_LIBRARY)
          ${MULLE_UNICODE_LIBRARY}
          CACHE INTERNAL "need to cache this"
       )
-      # intentionally left blank
+      #
+      # Inherit information from dependency.
+      # Encompasses: no-cmake-searchpath,no-cmake-dependency,no-cmake-loader
+      # Disable with: `mulle-sourcetree mark mulle-unicode no-cmake-inherit`
+      #
+      # temporarily expand CMAKE_MODULE_PATH
+      get_filename_component( _TMP_MULLE_UNICODE_ROOT "${MULLE_UNICODE_LIBRARY}" DIRECTORY)
+      get_filename_component( _TMP_MULLE_UNICODE_ROOT "${_TMP_MULLE_UNICODE_ROOT}" DIRECTORY)
+      #
+      #
+      # Search for "DependenciesAndLibraries.cmake" to include.
+      # Disable with: `mulle-sourcetree mark mulle-unicode no-cmake-dependency`
+      #
+      foreach( _TMP_MULLE_UNICODE_NAME "mulle-unicode")
+         set( _TMP_MULLE_UNICODE_DIR "${_TMP_MULLE_UNICODE_ROOT}/include/${_TMP_MULLE_UNICODE_NAME}/cmake")
+         # use explicit path to avoid "surprises"
+         if( EXISTS "${_TMP_MULLE_UNICODE_DIR}/DependenciesAndLibraries.cmake")
+            unset( MULLE_UNICODE_DEFINITIONS)
+            list( INSERT CMAKE_MODULE_PATH 0 "${_TMP_MULLE_UNICODE_DIR}")
+            # we only want top level INHERIT_OBJC_LOADERS, so disable them
+            if( NOT NO_INHERIT_OBJC_LOADERS)
+               set( NO_INHERIT_OBJC_LOADERS OFF)
+            endif()
+            list( APPEND _TMP_INHERIT_OBJC_LOADERS ${NO_INHERIT_OBJC_LOADERS})
+            set( NO_INHERIT_OBJC_LOADERS ON)
+            #
+            include( "${_TMP_MULLE_UNICODE_DIR}/DependenciesAndLibraries.cmake")
+            #
+            list( GET _TMP_INHERIT_OBJC_LOADERS -1 NO_INHERIT_OBJC_LOADERS)
+            list( REMOVE_AT _TMP_INHERIT_OBJC_LOADERS -1)
+            #
+            list( REMOVE_ITEM CMAKE_MODULE_PATH "${_TMP_MULLE_UNICODE_DIR}")
+            set( INHERITED_DEFINITIONS
+               ${INHERITED_DEFINITIONS}
+               ${MULLE_UNICODE_DEFINITIONS}
+               CACHE INTERNAL "need to cache this"
+            )
+            break()
+         else()
+            message( STATUS "${_TMP_MULLE_UNICODE_DIR}/DependenciesAndLibraries.cmake not found")
+         endif()
+      endforeach()
    else()
       # Disable with: `mulle-sourcetree mark mulle-unicode no-require-link`
       message( FATAL_ERROR "MULLE_UNICODE_LIBRARY was not found")
