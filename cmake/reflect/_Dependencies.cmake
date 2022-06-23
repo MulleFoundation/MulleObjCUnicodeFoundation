@@ -17,7 +17,7 @@ endif()
 # Disable for this platform: `mulle-sourcetree mark MulleObjCStandardFoundation no-cmake-platform-${MULLE_UNAME}`
 #
 if( NOT MULLE_OBJC_STANDARD_FOUNDATION_LIBRARY)
-   find_library( MULLE_OBJC_STANDARD_FOUNDATION_LIBRARY NAMES ${CMAKE_STATIC_LIBRARY_PREFIX}MulleObjCStandardFoundation${CMAKE_STATIC_LIBRARY_SUFFIX} MulleObjCStandardFoundation NO_CMAKE_SYSTEM_PATH NO_SYSTEM_ENVIRONMENT_PATH)
+   find_library( MULLE_OBJC_STANDARD_FOUNDATION_LIBRARY NAMES ${CMAKE_STATIC_LIBRARY_PREFIX}MulleObjCStandardFoundation${CMAKE_DEBUG_POSTFIX}${CMAKE_STATIC_LIBRARY_SUFFIX} ${CMAKE_STATIC_LIBRARY_PREFIX}MulleObjCStandardFoundation${CMAKE_STATIC_LIBRARY_SUFFIX} MulleObjCStandardFoundation NO_CMAKE_SYSTEM_PATH NO_SYSTEM_ENVIRONMENT_PATH)
    message( STATUS "MULLE_OBJC_STANDARD_FOUNDATION_LIBRARY is ${MULLE_OBJC_STANDARD_FOUNDATION_LIBRARY}")
    #
    # The order looks ascending, but due to the way this file is read
@@ -97,7 +97,7 @@ endif()
 # Disable for this platform: `mulle-sourcetree mark mulle-unicode no-cmake-platform-${MULLE_UNAME}`
 #
 if( NOT MULLE_UNICODE_LIBRARY)
-   find_library( MULLE_UNICODE_LIBRARY NAMES ${CMAKE_STATIC_LIBRARY_PREFIX}mulle-unicode${CMAKE_STATIC_LIBRARY_SUFFIX} mulle-unicode NO_CMAKE_SYSTEM_PATH NO_SYSTEM_ENVIRONMENT_PATH)
+   find_library( MULLE_UNICODE_LIBRARY NAMES ${CMAKE_STATIC_LIBRARY_PREFIX}mulle-unicode${CMAKE_DEBUG_POSTFIX}${CMAKE_STATIC_LIBRARY_SUFFIX} ${CMAKE_STATIC_LIBRARY_PREFIX}mulle-unicode${CMAKE_STATIC_LIBRARY_SUFFIX} mulle-unicode NO_CMAKE_SYSTEM_PATH NO_SYSTEM_ENVIRONMENT_PATH)
    message( STATUS "MULLE_UNICODE_LIBRARY is ${MULLE_UNICODE_LIBRARY}")
    #
    # The order looks ascending, but due to the way this file is read
