@@ -1,0 +1,36 @@
+{
+   "name" : "MulleObjCUnicodeFoundation",
+   "version" : "0.20.2",
+   "description" : "Unicode 3.x.x support for mulle-objc",
+   "keywords" : [],
+   "license" : "BSD-3-Clause",
+   "repo" : "MulleFoundation/MulleObjCUnicodeFoundation",
+   "src" : [
+      "src/generic/import-private.h",
+      "src/generic/import.h",
+      "src/generic/include-private.h",
+      "src/generic/include.h",
+      "src/MulleObjCLoader+MulleObjCUnicodeFoundation.h",
+      "src/MulleObjCLoader+MulleObjCUnicodeFoundation.m",
+      "src/MulleObjCUnicodeFoundation.h",
+      "src/MulleObjCUnicodeFoundation.m",
+      "src/NSCharacterSet+MulleObjCUnicode.h",
+      "src/NSCharacterSet+MulleObjCUnicode.m",
+      "src/NSMutableCharacterSet+MulleObjCUnicode.h",
+      "src/NSMutableCharacterSet+MulleObjCUnicode.m",
+      "src/NSString+MulleObjCUnicode.h",
+      "src/NSString+MulleObjCUnicode.m",
+      "src/reflect/objc-loader.inc",
+      "src/reflect/_MulleObjCUnicodeFoundation-export.h",
+      "src/reflect/_MulleObjCUnicodeFoundation-import-private.h",
+      "src/reflect/_MulleObjCUnicodeFoundation-import.h",
+      "src/reflect/_MulleObjCUnicodeFoundation-include-private.h",
+      "src/reflect/_MulleObjCUnicodeFoundation-include.h",
+      "src/reflect/_MulleObjCUnicodeFoundation-provide.h"
+   ],
+   "dependencies" : {
+      "MulleFoundation/MulleObjCStandardFoundation": "*",
+      "mulle-c/mulle-unicode": "*",
+      "mulle-objc/mulle-objc-list": "*"
+   }
+}

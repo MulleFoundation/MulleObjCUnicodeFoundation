@@ -65,7 +65,7 @@ MULLE_OBJC_DEPENDS_ON_LIBRARY( MulleObjCStandardFoundation);
 + (instancetype) capitalizedLetterCharacterSet
 {
    return( [[_MulleObjCConcreteCharacterSet newWithMemberFunction:mulle_unicode_is_capitalized
-                                                   planeFunction:(int (*)(unsigned int)) mulle_unicode_is_capitalizedplane
+                                                    planeFunction:(int (*)(unsigned int)) mulle_unicode_is_capitalizedplane
                                                           invert:NO] autorelease]);
 }
 
