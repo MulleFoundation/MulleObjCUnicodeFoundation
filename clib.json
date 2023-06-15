@@ -20,6 +20,7 @@
       "src/NSMutableCharacterSet+MulleObjCUnicode.m",
       "src/NSString+MulleObjCUnicode.h",
       "src/NSString+MulleObjCUnicode.m",
+      "src/reflect/objc-loader.inc",
       "src/reflect/_MulleObjCUnicodeFoundation-export.h",
       "src/reflect/_MulleObjCUnicodeFoundation-import-private.h",
       "src/reflect/_MulleObjCUnicodeFoundation-import.h",
