@@ -10,7 +10,7 @@
  *
  *  version:  major, minor, patch
  */
-#define MULLE_OBJC_UNICODE_FOUNDATION_VERSION  ((0 << 20) | (20 << 8) | 4)
+#define MULLE_OBJC_UNICODE_FOUNDATION_VERSION  ((0UL << 20) | (20 << 8) | 4)
 
 
 static inline unsigned int   MulleObjCUnicodeFoundation_get_version_major( void)
@@ -36,6 +36,26 @@ uint32_t   MulleObjCUnicodeFoundation_get_version( void);
 
 
 #import "_MulleObjCUnicodeFoundation-export.h"
+
+
+
+// define some "missing" functions for code completion
+static inline int   mulle_unicode16_is_privatecharacter( uint16_t c)
+{
+   return( mulle_utf16_is_privatecharacter( c));
+}
+
+
+static inline int   mulle_unicode32_is_privatecharacter( int32_t c)
+{
+   return( mulle_utf32_is_privatecharacter( c));
+}
+
+
+static inline int   mulle_unicode_is_privatecharacterplane( unsigned int plane)
+{
+   return( mulle_utf_is_privatecharacterplane( plane));
+}
 
 
 #ifdef __has_include
