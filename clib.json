@@ -1,7 +1,7 @@
 {
    "name" : "MulleObjCUnicodeFoundation",
-   "version" : "0.20.3",
-   "description" : "Unicode 3.x.x support for mulle-objc",
+   "version" : "0.20.4",
+   "description" : "🤓 Unicode 3.x.x support for mulle-objc",
    "keywords" : [],
    "license" : "BSD-3-Clause",
    "repo" : "MulleFoundation/MulleObjCUnicodeFoundation",
@@ -26,7 +26,8 @@
       "src/reflect/_MulleObjCUnicodeFoundation-import.h",
       "src/reflect/_MulleObjCUnicodeFoundation-include-private.h",
       "src/reflect/_MulleObjCUnicodeFoundation-include.h",
-      "src/reflect/_MulleObjCUnicodeFoundation-provide.h"
+      "src/reflect/_MulleObjCUnicodeFoundation-provide.h",
+      "src/reflect/_MulleObjCUnicodeFoundation-versioncheck.h"
    ],
    "dependencies" : {
       "MulleFoundation/MulleObjCStandardFoundation": "*",

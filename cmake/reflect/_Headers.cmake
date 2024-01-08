@@ -59,5 +59,6 @@ src/MulleObjCUnicodeFoundation.h
 src/NSCharacterSet+MulleObjCUnicode.h
 src/NSMutableCharacterSet+MulleObjCUnicode.h
 src/NSString+MulleObjCUnicode.h
+src/reflect/_MulleObjCUnicodeFoundation-versioncheck.h
 )
 
