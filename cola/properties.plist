@@ -20,14 +20,6 @@
          user="MulleFoundation";
       },
       {
-         description="🈚 Unicode ctype like library";
-         domain="github";
-         name="mulle-unicode";
-         repo="mulle-unicode";
-         url="https://github.com/mulle-c/mulle-unicode";
-         user="mulle-c";
-      },
-      {
          description="📒 Lists mulle-objc runtime information contained in executables.";
          domain="github";
          name="mulle-objc-list";
