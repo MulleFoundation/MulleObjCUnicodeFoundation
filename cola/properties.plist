@@ -7,7 +7,7 @@
       user="MulleFoundation";
       repo="MulleObjCUnicodeFoundation";
       homepage="https://github.com/MulleFoundation/MulleObjCUnicodeFoundation";
-      license="BSD-3-Clause"
+      license="BSD-3-Clause";
    };
    dependencies =
    (
@@ -35,5 +35,5 @@
          url="https://github.com/mulle-objc/mulle-objc-list";
          user="mulle-objc";
       }
-   )
+   );
 }

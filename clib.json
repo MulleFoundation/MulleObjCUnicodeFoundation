@@ -31,7 +31,6 @@
    ],
    "dependencies" : {
       "MulleFoundation/MulleObjCStandardFoundation": "*",
-      "mulle-c/mulle-unicode": "*",
       "mulle-objc/mulle-objc-list": "*"
    }
 }
