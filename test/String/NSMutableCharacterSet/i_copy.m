@@ -18,8 +18,8 @@ static int   test_i_copy( void)
 
    @try
    {
-      obj = [[[NSMutableCharacterSet alloc] init] autorelease];
-      value = [[obj copy] autorelease];
+      obj   = [[[NSMutableCharacterSet alloc] init] autorelease];
+      value = [NSString stringWithString:obj];
       printf( "%s\n", [[value mulleTestDescription] UTF8String]);
    }
    @catch( NSException *localException)
