@@ -1,6 +1,6 @@
 {
    "name" : "MulleObjCUnicodeFoundation",
-   "version" : "0.20.6",
+   "version" : "0.20.7",
    "description" : "🤓 Unicode 3.x.x support for mulle-objc",
    "keywords" : [],
    "license" : "BSD-3-Clause",

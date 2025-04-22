@@ -6,9 +6,9 @@ This library does not add any classes, but provides a lot of categories
 on NSString and NSCharacterSet.
 
 
-| Release Version                                       | Release Notes
-|-------------------------------------------------------|--------------
-| ![Mulle kybernetiK tag](https://img.shields.io/github/tag/MulleFoundation/MulleObjCUnicodeFoundation.svg) [![Build Status](https://github.com/MulleFoundation/MulleObjCUnicodeFoundation/workflows/CI/badge.svg)](//github.com/MulleFoundation/MulleObjCUnicodeFoundation/actions) | [RELEASENOTES](RELEASENOTES.md) |
+| Release Version                                       | Release Notes  | AI Documentation
+|-------------------------------------------------------|----------------|---------------
+| ![Mulle kybernetiK tag](https://img.shields.io/github/tag/MulleFoundation/MulleObjCUnicodeFoundation.svg) [![Build Status](https://github.com/MulleFoundation/MulleObjCUnicodeFoundation/workflows/CI/badge.svg)](//github.com/MulleFoundation/MulleObjCUnicodeFoundation/actions) | [RELEASENOTES](RELEASENOTES.md) | [DeepWiki for MulleObjCUnicodeFoundation](https://deepwiki.com/MulleFoundation/MulleObjCUnicodeFoundation)
 
 
 
