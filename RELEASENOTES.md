@@ -1,3 +1,9 @@
+### 0.20.8
+
+
+
+* NSMutableCharacterSet now properly uses `instance` instead of deprecated `object` method
+
 ### 0.20.7
 
 Various small improvements
