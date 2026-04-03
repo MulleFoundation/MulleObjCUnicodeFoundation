@@ -1,4 +1,5 @@
 # MulleObjCUnicodeFoundation Library Documentation for AI
+<!-- Keywords: unicode, character-sets -->
 
 ## 1. Introduction & Purpose
 
