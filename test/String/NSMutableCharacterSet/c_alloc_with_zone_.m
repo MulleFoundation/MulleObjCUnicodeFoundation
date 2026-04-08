@@ -14,7 +14,7 @@
 static int   test_c_alloc_with_zone_( void)
 {
    id value;
-   struct { void * f0; } * params_1[] =
+   struct { NSZone * f0; } * params_1[] =
    {
       0
    };
@@ -25,7 +25,7 @@ static int   test_c_alloc_with_zone_( void)
    {
       @try
       {
-         value = [[NSMutableCharacterSet allocWithZone:params_1[ i_1]] autorelease];
+         value = [[NSMutableCharacterSet allocWithZone:(NSZone *) params_1[ i_1]] autorelease];
          mulle_printf( "%s\n", [[value mulleTestDescription] UTF8String]);
       }
       @catch( NSException *localException)
