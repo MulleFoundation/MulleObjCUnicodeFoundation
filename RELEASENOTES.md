@@ -1,56 +1,20 @@
-### 0.20.8
+## 0.21.0
 
 
 
-* NSMutableCharacterSet now properly uses `instance` instead of deprecated `object` method
-
-### 0.20.7
-
-Various small improvements
-
-### 0.20.6
-
-Various small improvements
-
-### 0.20.5
-
-Various small improvements
-
-### 0.20.4
-
-* Various small improvements
-
-### 0.20.3
-
-* Various small improvements
-
-### 0.20.2
-
-* Various small improvements
-
-### 0.20.1
-
-* change GLOBAL for Windows
-
-## 0.20.0
-
-* Various small improvements
 
 
-## 0.19.0
-
-* Various small improvements
 
 
-## 0.18.0
-
-* Various small improvements
 
 
-### 0.17.2
 
-* remove duplicate objc-deps.inc
 
-# 0.17.1
 
-* first version
+
+
+
+
+* **BREAKING**: rename MulleObjCLoader(MulleObjCUnicodeFoundation) → MulleObjCDeps(MulleObjCUnicodeFoundation); update dependency registration usage
+* Replace generated objc-loader.inc with objc-deps.inc to register NSCharacterSet, NSMutableCharacterSet and NSString with MulleObjCUnicode; reflect headers updated
+* Allow building when `MULLE_FOUNDATION_BASE_BUILD` is defined (visibility macro fallback); updated tests to match renames
