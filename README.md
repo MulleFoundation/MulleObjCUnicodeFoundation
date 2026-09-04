@@ -13,6 +13,11 @@ on NSString and NSCharacterSet.
 
 
 
+## Documentation & Guides
+
+* [API Summary](asset/dox/api/toc)
+
+
 
 
 ## Requirements

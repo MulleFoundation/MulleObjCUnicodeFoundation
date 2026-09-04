@@ -10,7 +10,7 @@
       repo="MulleObjCUnicodeFoundation";
       homepage="https://github.com/MulleFoundation/MulleObjCUnicodeFoundation";
       license="BSD-3-Clause";
-      version="0.21.1";
+      version="0.21.2";
    };
    dependencies =
    (
