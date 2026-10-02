@@ -1,6 +1,6 @@
 cmake_minimum_required( VERSION 3.13...99.99)
 
-project( MulleObjCUnicodeFoundation VERSION 0.21.2 LANGUAGES C)
+project( MulleObjCUnicodeFoundation VERSION 0.21.3 LANGUAGES C)
 
 
 ### mulle-sde environment
@@ -44,8 +44,8 @@ endif()
 include( InstallLibrary)
 
 if( LINK_PHASE)
-   include( InstallCMakeInclude)
-   include( InstallCMakePackage)
+   include( AddSubdirectorySupport)
+   include( FindPackageSupport)
 endif() 
 
 include( FinalOutput OPTIONAL)
