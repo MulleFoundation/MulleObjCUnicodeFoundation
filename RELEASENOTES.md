@@ -1,8 +1,10 @@
 ### 0.21.3
 
-* build system maintenance and tooling upgrade
-* rename dependency mulle-objc-list to mulle-objc-tools
-* test fixups
+
+
+* dependency renamed from mulle-objc-list to mulle-objc-tools
+* version check now accepts MulleObjCStandardFoundation 0.25.x
+* tests use +instance instead of alloc/init/autorelease
 
 ### 0.21.2
 
