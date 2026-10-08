@@ -2,6 +2,7 @@
 
 
 
+
 * dependency renamed from mulle-objc-list to mulle-objc-tools
 * version check now accepts MulleObjCStandardFoundation 0.25.x
 * tests use +instance instead of alloc/init/autorelease
